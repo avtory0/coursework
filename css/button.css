@@ -1,0 +1,108 @@
+/* button */
+
+button {
+    font-size: 100%;
+    margin: 0;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: #D34A44;
+    color: #fff;
+    border: none;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    line-height: 1;
+    outline: none;
+}
+
+@media only screen and (max-width: 800px){
+    .discounts, .button {
+        margin-bottom: 10px;
+    }
+} 
+/* discount_button */
+
+.discount_button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    border: 2px solid #D34A44;
+    box-shadow: 0 0 10px #D34A44;
+    border-radius: 10px;
+    padding: 10px 40px;
+    outline: none;
+    transition: all ease-out .3s;
+}
+
+.discount_button:hover {
+    box-shadow: 0 0 20px #D34A44;
+}
+
+.discount_button>i {
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+@keyframes button__more {
+    0% {
+        transform: rotateZ(0deg)
+    }
+    50% {
+        transform: rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+.discount_button:hover i {
+    animation: button__more .25s linear;
+}
+
+
+/* schedule btn */
+
+.btn_time {
+    cursor: pointer;
+    display: inline-block;
+    height: unset;
+    margin: 20px 10px 0 0;
+    padding: 7px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    background-color: #D34A44;
+    line-height: 1.2;
+    box-shadow: 0 0.1em 0.1em 0 rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: all ease-out .25s
+}
+
+.btn_time:hover {
+    transform: translateY(-10px);
+}
+ 
+.hide_bnt {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    
+}
+
+@media only screen and (min-width:767px) {
+    .hide_btn {
+        display: none;
+    }
+}

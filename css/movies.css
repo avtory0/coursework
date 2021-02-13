@@ -1,0 +1,594 @@
+/*movies*/
+
+.movies {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .movies {
+        position: relative;
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+    .movies, .wrapper {
+        padding: 0;
+    }
+    .item {
+        padding: 0 20px;
+    }
+}
+
+/* @media only screen and (max-width: 991px) {
+    .movies .wrapper {
+        padding: 0;
+    }
+} */
+
+.movies_head {
+    position: relative;
+}
+
+/* @media only screen and (max-width: 1199px) {
+    .movies_head .wrapper {}
+} */
+
+.movies_title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 40px;
+    text-align: center;
+}
+
+@media only screen and (max-width:1199px) {
+    .movies_title {
+        font-size: 30px;
+       
+    }
+}
+
+.movies .movies_inner {
+    margin-bottom: 20px;
+    transition: all ease-out .25s;
+}
+
+.movies_inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+}
+
+.movies_item {
+    margin: 0 15px 20px;
+}
+@media screen and (max-width: 1199px) and (min-width:900px){
+    .movies_item {
+        margin: 0 20px 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .movies_item {
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .25);
+        border-radius: 5px;
+        overflow: hidden;
+        border: 0;
+    }
+    .movies_item:first-child {
+        margin-top: 0;
+    }
+}
+
+.movies_posters {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 5px 10px rgba(black, .5);
+}
+
+.movies .movies_posters {
+    margin-bottom: 20px;
+    transition: all ease-out .25s;
+}
+
+.movies_posters:hover {
+    transform: translateY(-15px);
+}
+
+.movies_age-rating {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.movies_age-rating[data-rating="12+"] {
+    background: #6fcf97;
+}
+
+.movies_age-rating[data-rating="16+"] {
+    background: #ffe140;
+}
+
+.movies_age-rating[data-rating="18+"] {
+    background: #eb5757;
+}
+
+.movies_posters-image {
+    display: block;
+    width: 200px;
+    height: 300px;
+}
+
+@media only screen and (max-width: 767px) {
+    .movies_posters {
+        width: 100%;
+        height: 100%;
+    }
+    .movies_posters:hover {
+        transform: none;
+    }
+    .movies_posters-image {
+        display: none;
+    }
+}
+
+.movies_hposters {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .movies_hposters {
+        display: block;
+        height: 200px;
+        width: 100%;
+        position: relative;
+    }
+    .movies_hposters img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+    }
+    .movies_age-rating {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 36px;
+        height: 36px;
+        border-radius: 4px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 18px;
+        padding-top: 5px;
+        color: #fff;
+        background: #6fcf97;
+        z-index: 2;
+    }
+}
+
+.movies_description {
+    display: flex;
+    color: #FFF;
+}
+
+.movies_name {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    .movies_description .movies_name {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+/* schedule */
+
+.schedule .movies_posters {
+    margin: 0;
+}
+
+.schedule .movies_posters:hover {
+    transform: none;
+}
+
+.item.movies>.content .information h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 20px;
+}
+
+.item .info {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .8);
+}
+
+@media only screen and (min-width: 1099px) {
+    .item.movies {
+        position: relative;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .item.movies>.content {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+    .item.movies>.content .information {
+        position: relative;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 1099px) and (min-width:767px) {
+    .item.movies {
+        position: relative;
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .item.movies>.content {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: stretch;
+    }
+    .item.movies>.content .information {
+        position: relative;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .item.movies>.content .information h3{
+        margin-top: 10px;
+    }
+}
+
+.seances {
+    padding: 10px 0;
+}
+
+.price {
+    display: none;
+    position: absolute;
+    left: 16%;
+    top: 35%;
+    background-color: #000;
+    padding: 6px;
+    font-size: 11px;
+    line-height: 1.2;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.price::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+}
+
+/* overplay */
+
+.overplay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    z-index: 5;
+}
+
+.popup {
+    position: absolute;
+    width: 600px;
+    min-height: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #1F2437;
+    color: #fff;
+    perspective: 600px;
+}
+
+.close_popup {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.close_popup:before {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    height: 1px;
+    width: 21px;
+    top: 11px;
+    left: -4px;
+    transform: rotate(-45deg);
+}
+
+.close_popup:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    height: 1px;
+    width: 21px;
+    top: 11px;
+    transform: rotate(45deg);
+    left: -4px;
+}
+
+/* @keyframes close {
+    0% {
+        transform: rotateZ(0deg)
+    }
+    50% {
+        transform: rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.close_popup:hover {
+    animation: close .3 linear;
+} */
+
+/* card */
+
+.scene {
+    width: 520px;
+    height: 460px;
+}
+
+.card {
+    
+    transition: transform 2s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card_face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.tickets_button {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+/* cinema hall */
+
+.aa {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+.cinemaHall {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.seat {
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+    background: transparent;
+    border: 1px solid #999999;
+    border-radius: 10px 10px 5px 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.passageBetween {
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.buy {
+    background-color: #D34A44;
+}
+
+.safezone {
+    background-color: rgb(123, 142, 185);
+    cursor: not-allowed;
+}
+
+.mvsnm {
+    text-align: center;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 20px;
+}
+
+.result {
+    font-size: 10px;
+    display: inline-block;
+    width: 110px;
+    max-height: 200px;
+    margin-right: 5px;
+}
+
+.urchoise {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.ticket {
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.hall_discription {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.typesofseats {
+    width: 60%;
+}
+
+.tickets_button {
+    width: 40%;
+}
+
+.tickets_button>.button {
+    margin-left: 30px;
+}
+
+.types_inner {
+    margin: 0 0 10px;
+}
+
+.types_inner>span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, .7);
+}
+
+.informaiton {
+    margin-bottom: 125px;
+}
+.informaiton>h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tickets_form {
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.tickets_form > input {
+    height: 35px;
+    background-color: inherit;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    outline: none;
+}
+.navigation {
+    position: absolute;
+    left: 0;
+    top: 370px;
+}
+
+.navigation > .getback {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .popup {
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        border-radius: 0;
+    }
+    .scene{
+        width: 100%;
+        height: 100%;
+    }
+    .aaa {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .seat {
+        width: 20px;
+        height: 20px;
+    }
+    .hall_discription {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .urchoise {
+        text-align: center;
+    }
+    .typesofseats {
+        width: 100%;
+    }
+    .tickets_button {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .tickets_button>.button {
+        margin: 0 auto;
+    }
+    .tickets_form > input  {
+        margin: 10px 0;
+    }
+    .navigation {
+        position: absolute;
+        left: 0;
+        top: 480px;
+    }
+}
